@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Code Examples</title>
+  <style>
+    .box {
+      padding: 20px;
+      font-size: 6em;
+      text-align: center;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="game">hello There</div>
+  <script>
+    const gameArea = document.querySelectorAll('.game')[0];
+    console.log(gameArea)
+    const output= document.createElement(('div'))
+    console.log(gameArea)
+    console.log(output)
+    output.textContent = "hello Batty Bwoy";
+    output.val = 0;
+    output.classList.add('box')
+    
+    output.addEventListener('click', (e) => {
+      output.val ++;
+      output.textContent = output.val
+      let temp = output.val % 2 ? "red" : "blue";
+      output.style.backgroundColor = temp;
+      console.log(val)
+
+    })
+    gameArea.append(output)
+  
+  
+  
+  </script>
+</body>
+</html>

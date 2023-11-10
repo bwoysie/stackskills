@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Examles</title>
+  <style>
+    .box {
+      padding: 20px;
+      font-size: 6em;
+      text-align: center;
+      color: white;
+    }
+  </style>
+
+
+
+</head>
+<body>
+  <div class="fame">Jamaica</div>
+  <script>
+    const fameArea = document.querySelectorAll('.fame')[0];
+    const output = document.createElement('div')
+    output.textContent = "What a gwaan Jamaica"
+    output.val = 0;
+    output.classList.add('box')
+    output.addEventListener('click',(e) => {
+      output.val ++
+      output.textContent = output.val
+      let temp = output.val % 2 ? ' red' : 'green'
+      output.style.backgroundColor = temp
+    })
+    fameArea.append(output)
+    let val = fameArea.appendChild(output)
+    console.log(val)
+    console.log(output)
+  </script>
+  
+</body>
+</html>

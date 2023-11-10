@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Code Examples</title>
+</head>
+<body>
+  <div class="game">Hello</div>
+  <script>
+    const gameArea = document.querySelector('.game');
+    console.log(gameArea)
+    gameArea.textContent = "hello world"
+    gameArea.style.backgroundColor='purple'
+    gameArea.style.color ='white'
+    gameArea.val = "Hidden"
+    console.log(gameArea)
+
+    
+    gameArea.addEventListener('click',(e)=>{
+      if(e.target.style.backgroundColor == 'purple') {
+        e.target.style.backgroundColor = 'green'
+    
+      } else {
+        e.target.style.backgroundColor = 'purple'
+      }
+      console.log(e)
+    })
+
+  </script>
+  
+</body>
+</html>
